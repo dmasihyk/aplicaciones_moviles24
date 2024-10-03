@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          leading: const Icon(Icons.menu), //icono de menu
+          title: const Text('Diagramacion'), //titulo de la AppBar
+          actions: const [
+            Icon(Icons.more_vert), //icono de more_vert
+          ],
+        ),
+
+        body: SingleChildScrollView(
+       
+        child: Column(
+
+          children: [
+          //Aca va todo lo que muestre la pantalla, el body de html
+
+          Container(
+            height: 570.0, //Altura de 148 pixeles 
+            width: double.infinity, //ocupa todo el ancho disponible
+            color: Colors.grey, //color de fondo gris
+            child: const Text('Hello World!'), //texto dentro del primer container
+          ),
+
+          const SizedBox(height: 12.0), //espacio de 12 pixeles entre containers
+          Container(
+            height: 148.0, //altura de 148 pixeles
+            width: double.infinity, //ocupa todo el ancho disponible
+            color: Colors.blue, //color de fondo azul
+            child: const Text('Segundo Container'), //texto dentro del segundo container
+          ),
+
+          const SizedBox(height: 12.0), //espacio de 12 pixeles entre containers
+          Container(
+            height: 148.0, //altura de 148 pixeles
+            width: double.infinity, //ocupa todo el ancho disponible
+            color: Colors.blue, //color de fondo azul
+            child: const Text('Tercer Container'), //texto dentro del segundo container
+            ),
+
+            const SizedBox(height: 12.0), //espacio de 12 pixeles entre containers
+          Container(
+            height: 148.0, //altura de 148 pixeles
+            width: double.infinity, //ocupa todo el ancho disponible
+            color: Colors.blue, //color de fondo azul
+            child: const Text('Cuarto Container'), //texto dentro del segundo container
+            ),
+
+           ],
+
+          ),
+        ),
+      ),
+    );
+  }
+}
