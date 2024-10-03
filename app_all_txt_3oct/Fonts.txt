@@ -1,0 +1,156 @@
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(const MainApp());
+}
+
+class MainApp extends StatelessWidget {
+  const MainApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Textos según Material Design'), //titulo de la AppBar
+        ),
+        body: ListView(
+          padding: const EdgeInsets.all(16.0),
+          children: const [
+
+            //Titulo H1
+            Text(
+              'Título Principal (H1)',
+              style: TextStyle(
+                fontSize: 96,
+                fontWeight: FontWeight.w300, // Peso ligero (light)
+                letterSpacing: -1.5,
+              ),
+            ),
+
+            //Titulo H2
+            Text(
+              'Título Principal (H2)',
+              style: TextStyle(
+                fontSize: 60,
+                fontWeight: FontWeight.w300, // Peso ligero (light)
+                letterSpacing: -0.5,
+              ),
+            ),
+
+            //Titulo H3
+            Text(
+              'Título Principal (H3)',
+              style: TextStyle(
+                fontSize: 48,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0,
+              ),
+            ),
+
+            //Titulo H4
+            Text(
+              'Título Principal (H4)',
+              style: TextStyle(
+                fontSize: 34,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0.25,
+              ),
+            ),
+
+            //Titulo H5
+            Text(
+              'Título Principal (H5)',
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0,
+              ),
+            ),
+
+            //Titulo H6
+            Text(
+              'Título Principal (H6)',
+              style: TextStyle(
+                fontSize: 20,
+                fontWeight: FontWeight.w500, // Peso ligero (light)
+                letterSpacing: 0.15,
+              ),
+            ),
+
+            //Subtitulos
+            Text(
+              'Subtítulo 1',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0.15,
+              ),
+            ),
+
+            Text(
+              'Subtítulo 2',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500, // Peso ligero (light)
+                letterSpacing: 0.1,
+              ),
+            ),
+
+            //Body
+            Text(
+              'Body 1',
+              style: TextStyle(
+                fontSize: 16,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0.5,
+              ),
+            ),
+
+             Text(
+              'Body 2',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0.25,
+              ),
+            ),
+
+            //Button
+            Text(
+              'Button',
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500, // Peso ligero (light)
+                letterSpacing: 1.25,
+              ),
+            ),
+
+            //Caption
+            Text(
+              'Caption',
+              style: TextStyle(
+                fontSize: 12,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 0.4,
+              ),
+            ),
+
+            //Overline
+            Text(
+              'Overline',
+              style: TextStyle(
+                fontSize: 10,
+                fontWeight: FontWeight.normal, // Peso ligero (light)
+                letterSpacing: 1.5,
+              ),
+            ),
+
+
+     
+         ],
+        ),    
+      ),
+    );      
+  }
+}

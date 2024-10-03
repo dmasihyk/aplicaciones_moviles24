@@ -19,7 +19,9 @@ class MainApp extends StatelessWidget {
           ],
         ),
 
-        body: ListView(
+        body: SingleChildScrollView(
+       
+        child: Column(
 
           children: [
           //Aca va todo lo que muestre la pantalla, el body de html
@@ -48,53 +50,18 @@ class MainApp extends StatelessWidget {
             ),
 
             const SizedBox(height: 12.0), //espacio de 12 pixeles entre containers
-
           Container(
             height: 148.0, //altura de 148 pixeles
-            color: Colors.transparent, //color de fondo azul
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    color: Colors.orange,
-                  ),
-                  ),
-                  const SizedBox(width: 12.0),
-                  Expanded(
-                  child: Container(
-                    color: Colors.orange,
-                  ),
-                  ),
-              ],
+            width: double.infinity, //ocupa todo el ancho disponible
+            color: Colors.blue, //color de fondo azul
+            child: const Text('Cuarto Container'), //texto dentro del segundo container
             ),
-           ),
 
-           const SizedBox(height: 12.0),
-
-             Container(
-            height: 148.0, //altura de 148 pixeles
-            color: Colors.transparent, //color de fondo azul
-            child: Row(
-              children: [
-                Expanded(
-                  child: Container(
-                    color: Colors.orange,
-                  ),
-                  ),
-                  const SizedBox(width: 12.0),
-                  Expanded(
-                  child: Container(
-                    color: Colors.orange,
-                  ),
-                  ),
-              ],
-            ),
-           ),
-
-          ],
+           ],
 
           ),
         ),
-      );
+      ),
+    );
   }
 }
